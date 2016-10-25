@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/image_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/family"
+        android:layout_centerHorizontal="true"
+        />
+
+
+        <LinearLayout
+            android:id="@+id/login_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_layout"
+            android:layout_below="@+id/image_logo"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_weight="0.3"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Login"
+                android:gravity="center"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/login_content"
+            android:layout_margin="@dimen/margin_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasło"
+                android:layout_weight="0.3"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Hasło"
+                android:gravity="center"
+                android:layout_weight="0.6"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/password_content"
+        android:layout_margin="@dimen/margin_layout">
+
+        <Button
+            android:id="@+id/bRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rejestracja"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Zaloguj"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
